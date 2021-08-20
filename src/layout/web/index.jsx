@@ -1,11 +1,10 @@
 import React from 'react';
-import '../../styles/app.less'
-import {Layout, Row, Col, BackTop} from 'antd'
+import '@/styles/app.less'
+import {Layout, Row, Col} from 'antd'
 
 import Header from './header'
 import SideBar from './sidebar'
 import AppMain from './AppMain'
-import App from '../../App';
 
 // 响应式
 const siderLayout = { xxl: 4, xl: 5, lg: 5, sm: 0, xs: 0 }

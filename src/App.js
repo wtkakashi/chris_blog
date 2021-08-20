@@ -1,8 +1,6 @@
 import React from 'react';
 import routeConfig from './routes'
 import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
-//import { Router, Route, Link } from 'react-router'
-import Layout from './layout/web'
 function App() {
   console.log(routeConfig);
   const createRoute = routes => {

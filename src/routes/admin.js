@@ -1,10 +1,6 @@
 import Layout from '../layout/admin'
 import Loadable from 'react-loadable';
 import LoadingComponent from '../components/loadingComponent/loadingComponent'
-const loadConfig = {
-  loading: LoadingComponent,
-  delay: 300
-}
 
 const Admin =  {
   path: '/admin',
