@@ -1,15 +1,35 @@
 import React from 'react';
 import { SIDEBAR } from '@/config'
-import { Divider } from 'antd';
-import {useSelector} from 'react-redux'
+import { Divider ,Tag} from 'antd';
+import {useEffect} from 'react'
+import {Link} from 'react-router-dom'
+import {useSelector, useDispatch} from 'react-redux'
+import {getTagList} from '@/store/articles/actions'
 
 const SideBar = ()=>{
+  const dispatch = useDispatch();
+  const tagList = useSelector(state => {
+    console.log('useSelector');
+    console.log(state);
+    return state.articles.tagList
+  });
+  useEffect(() => {
+    console.log('useEfflct');
+    dispatch(getTagList())
+  },[])
   return (
     <aside className='app-sidebar'>
-    <img src='' />
+    <img src={SIDEBAR.avatar} className='sider-avatar'/>
     <h2>{SIDEBAR.title}</h2>
     <h5 className='font-gray'>{SIDEBAR.subTitle}</h5>
     <Divider orientation="left">标签</Divider>
+    {tagList.map((tag, idx)=>{
+      return (
+        <Tag key={idx} color={tag.color} className='tag-item'>
+          <Link to={`/tags/${tag.name}`}>{tag.name}</Link>
+        </Tag>
+      )
+    })}
     </aside>
   )
 }

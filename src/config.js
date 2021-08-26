@@ -1,8 +1,9 @@
 export const HEADER_BLOG_NAME = " chris'blog ";
 export const SIDEBAR = {
-  avatar: '@/assets/images/avator.jpg',
+  avatar: require('@/assets/images/avatar.jpg'),
   title: 'chris',
   subTitle: '座右铭',
 }
 // API_BASE_URL
-export const API_BASE_URL = 'http://localhost:6060'
+export const API_BAISC_URL = 'https://www.fastmock.site/mock/a136e622ecf396cd60384ab5cc88ed86'
+

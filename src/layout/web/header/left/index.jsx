@@ -1,5 +1,5 @@
 import React from 'react';
-import {HEADER_BLOG_NAME} from '/Users/qihoo/chris/chris_blog/src/config.js'
+import {HEADER_BLOG_NAME} from '@/config.js'
 
 const HeaderLeft = () =>{
   return (

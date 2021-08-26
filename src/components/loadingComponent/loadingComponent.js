@@ -10,3 +10,7 @@ const LoadingComponent = ({error, pastDelay}) =>{
   }
 }
 export default LoadingComponent
+
+
+
+ 

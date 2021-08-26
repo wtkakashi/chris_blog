@@ -13,6 +13,6 @@ const Web = {
       loading: LoadingComponent,
       delay: 300
     })
-  } ]
+  }]
 }
 export default Web

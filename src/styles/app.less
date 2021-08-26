@@ -2,6 +2,7 @@
   .app-header {
     background: #fff;
     box-shadow: 0 2px 8px #f0f1f2;
+    padding: 0px;
     .header-left {
       line-height: 22px;
       text-align: center;
@@ -12,6 +13,7 @@
       display: flex;
       justify-content: space-between;
       padding-left: 16px;
+      padding-right: 40px;
     }
     .search-box {
       flex-grow: 3;
@@ -27,5 +29,24 @@
       border: 0;
     }
     
+  }
+  .app-sidebar {
+    .sider-avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+    }
+  }
+  .app-wrapper {
+    background: #fff;
+    padding: 40px 0 0;
+  }
+  .app-sidebar {
+    border-right: 1px solid #ebedf0;
+    text-align: center;
+    height: calc(100vh - 107px);
+  }
+  .tag-item {
+    margin: 8px;
   }
 }
