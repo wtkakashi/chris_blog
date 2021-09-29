@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, useLocation } from 'react-router-dom'
 import {Menu} from 'antd'
-import {HomeOutlined,EditOutlined,FolderOutlined,UserOutlined} from '@ant-design/icons';
+import {HomeOutlined,TagsOutlined,FieldTimeOutlined,UserOutlined} from '@ant-design/icons';
 
 import navList from './navList'
 
@@ -16,8 +16,8 @@ const Navbar = props =>{
         <Menu.Item key={nav.link}>
         <Link to={nav.link}>
        {nav.icon === 'HomeOutlined' &&  <HomeOutlined  />}
-       {nav.icon === 'EditOutlined' &&  <EditOutlined  />}
-       {nav.icon === 'FolderOutlined' &&  <FolderOutlined  />}
+       {nav.icon === 'TagsOutlined' &&  <TagsOutlined  />}
+       {nav.icon === 'FieldTimeOutlined' &&  <FieldTimeOutlined  />}
        {nav.icon === 'UserOutlined' &&  <UserOutlined  />}
         <span className='nav-text'>{nav.title}</span>
         </Link>

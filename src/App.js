@@ -1,6 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-23 09:49:58
+ * @LastEditTime: 2021-09-23 14:19:23
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chris_blog/src/App.js
+ */
 import React from 'react';
 import routeConfig from './routes'
+import PublicComponent from '@/components/Public'
 import { BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
+
 function App() {
   console.log(routeConfig);
   const createRoute = routes => {
@@ -45,8 +55,12 @@ function App() {
       <Route exact key={idx} path={path} component={Component}></Route>
     )
   }
+  const children = createRoute(routeConfig);
   return (
-    <Router children={createRoute(routeConfig)}></Router>
+    <Router>
+      {children}
+        <PublicComponent />
+    </Router>
   )
 }
 export default App

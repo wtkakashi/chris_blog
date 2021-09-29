@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-23 09:49:58
+ * @LastEditTime: 2021-09-23 17:38:46
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chris_blog/src/layout/web/header/right/navList.js
+ */
 const NAVLIST = [
   {
     icon: 'HomeOutlined',
@@ -5,13 +13,13 @@ const NAVLIST = [
     link: '/'
   },
   {
-    icon: 'EditOutlined',
-    title: '归档',
+    icon: 'FieldTimeOutlined',
+    title: '时间轴',
     link: '/archives'
   },
   {
-    icon: 'FolderOutlined',
-    title: '分类',
+    icon: 'TagsOutlined',
+    title: '标签',
     link: '/categories'
   },
   {

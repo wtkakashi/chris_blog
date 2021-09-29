@@ -18,7 +18,7 @@ const Search = props =>{
   
   return (
     <div className='search-box'>
-      <SearchOutlined className='search-icon' onClick={e =>{props.history.push(`/?page=1&keyword={keyword}`)}}/>
+      <SearchOutlined className='search-icon' onClick={e =>{props.history.push(`/?page=1&keyword=${keyword}`)}}/>
       <Input
         type='text'
         value={keyword}

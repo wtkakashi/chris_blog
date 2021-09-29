@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-23 09:49:58
+ * @LastEditTime: 2021-09-24 14:54:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chris_blog/src/store/articles/reducer.js
+ */
 import * as TYPES from '@/store/types'
 import {generatorColor} from '@/utils'
 
